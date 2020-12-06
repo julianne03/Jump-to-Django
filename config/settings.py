@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'pybo.apps.PyboConfig',   #꼭 넣어야 데이터베이스 작업 가능
 ]
 
 MIDDLEWARE = [

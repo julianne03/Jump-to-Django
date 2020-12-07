@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Question List</title>
+</head>
+<body>
+    {%  if question_list %}  <!--question list가 있다면-->
+        <ul>
+            {%  for question in question_list %}
+                <li><a href="/pybo/{{ question.id }}/">{{ question.subject }}</a> </li>
+        {% endfor %}
+        </ul>
+    {% else %}
+        <p>질문이 없습니다.</p>
+    {% endif %}
+
+</body>
+</html>

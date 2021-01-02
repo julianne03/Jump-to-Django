@@ -19,7 +19,9 @@ from django.urls import path, include
 from pybo import views
 
 urlpatterns = [
+    path('', views.index, name='index'),
     path('admin/', admin.site.urls),
 
     path('pybo/', include('pybo.urls')),
+    path('common/', include('common.urls')),  # /common/ 으로 시작하는 URL은 모두 common/urls.py 를 참조
 ]
